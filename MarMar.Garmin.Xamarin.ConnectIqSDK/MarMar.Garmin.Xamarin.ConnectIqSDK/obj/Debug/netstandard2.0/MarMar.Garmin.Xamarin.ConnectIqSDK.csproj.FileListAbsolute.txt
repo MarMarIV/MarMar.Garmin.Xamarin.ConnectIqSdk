@@ -1,0 +1,9 @@
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\bin\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.deps.json
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\bin\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.dll
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\bin\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.pdb
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\obj\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.csprojAssemblyReference.cache
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\obj\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.csproj.CoreCompileInputs.cache
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\obj\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.AssemblyInfoInputs.cache
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\obj\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.AssemblyInfo.cs
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\obj\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.dll
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\MarMar.Garmin.Xamarin.ConnectIqSDK\obj\Debug\netstandard2.0\MarMar.Garmin.Xamarin.ConnectIqSDK.pdb

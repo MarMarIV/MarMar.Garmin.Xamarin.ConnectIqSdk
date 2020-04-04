@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22;ANDROID_23;ANDROID_24;ANDROID_25;ANDROID_26;ANDROID_27;ANDROID_28</DefineConstants>
+  </PropertyGroup>
+  <!-- Classes -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Apps.Connectmobile.Connectiq.IConnectIQService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.Adb.AdbConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.Adb.AdbDataHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.BuildConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.ConnectIQ.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.ConnectIQAdbStrategy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.ConnectIQDeviceStrategy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.ConnectIQStateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.Exception.InvalidStateException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.Exception.ServiceUnavailableException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.IQApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.IQDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.IQMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Android.Connectiq.IQMessageReceiver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.DataBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.IMonkeyContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyArray.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyBool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyChar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyDouble.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyFloat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyHash.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyInt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyLong.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyNull.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.MonkeyType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.SerializedObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.Serializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Garmin.Monkeybrains.Serialization.StringBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Java.Interop.__TypeRegistrations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)__NamespaceMapping__.cs" />
+  </ItemGroup>
+  <!-- Enums -->
+  <ItemGroup />
+</Project>

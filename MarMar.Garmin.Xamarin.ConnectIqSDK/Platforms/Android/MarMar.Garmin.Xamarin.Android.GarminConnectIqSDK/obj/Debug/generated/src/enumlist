@@ -1,0 +1,6 @@
+com.garmin.android.connectiq.ConnectIQ$IQConnectType:Com.Garmin.Android.Connectiq:ConnectIQ.IQConnectType
+com.garmin.android.connectiq.ConnectIQ$IQMessageStatus:Com.Garmin.Android.Connectiq:ConnectIQ.IQMessageStatus
+com.garmin.android.connectiq.ConnectIQ$IQOpenApplicationStatus:Com.Garmin.Android.Connectiq:ConnectIQ.IQOpenApplicationStatus
+com.garmin.android.connectiq.ConnectIQ$IQSdkErrorStatus:Com.Garmin.Android.Connectiq:ConnectIQ.IQSdkErrorStatus
+com.garmin.android.connectiq.IQApp$IQAppStatus:Com.Garmin.Android.Connectiq:IQApp.IQAppStatus
+com.garmin.android.connectiq.IQDevice$IQDeviceStatus:Com.Garmin.Android.Connectiq:IQDevice.IQDeviceStatus

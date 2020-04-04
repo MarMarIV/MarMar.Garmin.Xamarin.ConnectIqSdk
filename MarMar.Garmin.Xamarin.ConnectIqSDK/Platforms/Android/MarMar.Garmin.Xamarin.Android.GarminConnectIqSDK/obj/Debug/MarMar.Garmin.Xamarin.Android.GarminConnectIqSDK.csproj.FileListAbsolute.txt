@@ -1,0 +1,7 @@
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\bin\Debug\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK.dll
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\bin\Debug\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK.pdb
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\obj\Debug\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\obj\Debug\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK.csproj.CoreCompileInputs.cache
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\obj\Debug\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK.dll
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\obj\Debug\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK.pdb
+C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Platforms\Android\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK\obj\Debug\MarMar.Garmin.Xamarin.Android.GarminConnectIqSDK.csprojAssemblyReference.cache

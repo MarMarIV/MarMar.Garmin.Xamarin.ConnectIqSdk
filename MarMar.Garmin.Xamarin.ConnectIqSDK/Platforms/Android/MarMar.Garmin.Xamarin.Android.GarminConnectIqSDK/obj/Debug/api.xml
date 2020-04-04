@@ -1,0 +1,1432 @@
+<api>
+  <package name="com.garmin.android.apps.connectmobile.connectiq" jni-name="com/garmin/android/apps/connectmobile/connectiq">
+    <interface abstract="true" deprecated="not deprecated" final="false" name="IConnectIQService" static="false" visibility="public" jni-signature="Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService;">
+      <implements name="android.os.IInterface" name-generic-aware="android.os.IInterface" jni-type="Landroid/os/IInterface;">
+      </implements>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getApplicationInfo" jni-signature="(Ljava/lang/String;Ljava/lang/String;Lcom/garmin/android/connectiq/IQDevice;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p1" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p3" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getConnectedDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getKnownDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="openApplication" jni-signature="(Ljava/lang/String;Ljava/lang/String;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p1" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p3" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="openStore" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="registerApp" jni-signature="(Lcom/garmin/android/connectiq/IQApp;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p1" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p2" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="sendImage" jni-signature="(Lcom/garmin/android/connectiq/IQMessage;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQMessage" jni-type="Lcom/garmin/android/connectiq/IQMessage;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="sendMessage" jni-signature="(Lcom/garmin/android/connectiq/IQMessage;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQMessage" jni-type="Lcom/garmin/android/connectiq/IQMessage;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="android.os.Binder" extends-generic-aware="android.os.Binder" jni-extends="Landroid/os/Binder;" final="false" name="IConnectIQService.Stub" static="true" visibility="public" jni-signature="Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService$Stub;">
+      <implements name="com.garmin.android.apps.connectmobile.connectiq.IConnectIQService" name-generic-aware="com.garmin.android.apps.connectmobile.connectiq.IConnectIQService" jni-type="Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="IConnectIQService.Stub" jni-signature="()V" bridge="false" static="false" type="com.garmin.android.apps.connectmobile.connectiq.IConnectIQService.Stub" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="asBinder" jni-signature="()Landroid/os/IBinder;" bridge="false" native="false" return="android.os.IBinder" jni-return="Landroid/os/IBinder;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="asInterface" jni-signature="(Landroid/os/IBinder;)Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService;" bridge="false" native="false" return="com.garmin.android.apps.connectmobile.connectiq.IConnectIQService" jni-return="Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="obj" type="android.os.IBinder" jni-type="Landroid/os/IBinder;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTransact" jni-signature="(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="code" type="int" jni-type="I">
+        </parameter>
+        <parameter name="data" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="reply" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="IConnectIQService.Stub.Proxy" static="true" visibility="private" jni-signature="Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService$Stub$Proxy;">
+      <implements name="com.garmin.android.apps.connectmobile.connectiq.IConnectIQService" name-generic-aware="com.garmin.android.apps.connectmobile.connectiq.IConnectIQService" jni-type="Lcom/garmin/android/apps/connectmobile/connectiq/IConnectIQService;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="asBinder" jni-signature="()Landroid/os/IBinder;" bridge="false" native="false" return="android.os.IBinder" jni-return="Landroid/os/IBinder;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getApplicationInfo" jni-signature="(Ljava/lang/String;Ljava/lang/String;Lcom/garmin/android/connectiq/IQDevice;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="notificationPackage" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="notificationAction" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="applicationID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getConnectedDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInterfaceDescriptor" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getKnownDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openApplication" jni-signature="(Ljava/lang/String;Ljava/lang/String;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="notificationPackage" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="notificationAction" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openStore" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="applicationID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerApp" jni-signature="(Lcom/garmin/android/connectiq/IQApp;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="notificationAction" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="notificationPackage" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendImage" jni-signature="(Lcom/garmin/android/connectiq/IQMessage;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="image" type="com.garmin.android.connectiq.IQMessage" jni-type="Lcom/garmin/android/connectiq/IQMessage;">
+        </parameter>
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendMessage" jni-signature="(Lcom/garmin/android/connectiq/IQMessage;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="message" type="com.garmin.android.connectiq.IQMessage" jni-type="Lcom/garmin/android/connectiq/IQMessage;">
+        </parameter>
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="RemoteException" type="android.os.RemoteException">
+        </exception>
+      </method>
+    </class>
+  </package>
+  <package name="com.garmin.android.connectiq" jni-name="com/garmin/android/connectiq">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.garmin.android.connectiq.BuildConfig" synthetic="false" visibility="public">
+      </constructor>
+      <field deprecated="not deprecated" final="true" name="APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FLAVOR" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0&quot;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQ" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ;">
+      <constructor deprecated="not deprecated" final="false" name="ConnectIQ" jni-signature="()V" bridge="false" static="false" type="com.garmin.android.connectiq.ConnectIQ" synthetic="false" visibility="protected">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deviceStatusChanged" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="newStatus" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-type="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="displayGCMDialog" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="negButton" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="posButton" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAdbPort" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getApplicationInfo" jni-signature="(Ljava/lang/String;Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="applicationId" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQApplicationInfoListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getConnectedDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getDeviceStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-return="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQ;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ" jni-return="Lcom/garmin/android/connectiq/ConnectIQ;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" jni-signature="(Landroid/content/Context;Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;)Lcom/garmin/android/connectiq/ConnectIQ;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ" jni-return="Lcom/garmin/android/connectiq/ConnectIQ;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="connectType" type="com.garmin.android.connectiq.ConnectIQ.IQConnectType" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getKnownDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="initialize" jni-signature="(Landroid/content/Context;ZLcom/garmin/android/connectiq/ConnectIQ$ConnectIQListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="autoUI" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.ConnectIQListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$ConnectIQListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openApplication" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openStore" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="storeID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+        </exception>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerForAppEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="applistener" type="com.garmin.android.connectiq.ConnectIQ.IQApplicationEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerForDeviceEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQDeviceEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerForEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;Lcom/garmin/android/connectiq/IQApp;Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQDeviceEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="applistener" type="com.garmin.android.connectiq.ConnectIQ.IQApplicationEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="registerForRemoteAppEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="sendImageProtocol" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;[BLcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p2" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="p3" type="com.garmin.android.connectiq.ConnectIQ.IQSendImageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendMessage" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Ljava/lang/Object;Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="javaObject" type="java.lang.Object" jni-type="Ljava/lang/Object;">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQSendMessageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="sendMessageProtocol" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;[BLcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p2" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="p3" type="com.garmin.android.connectiq.ConnectIQ.IQSendMessageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAdbPort" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="port" type="int" jni-type="I">
+        </parameter>
+        <exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="shutdown" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unregisterAllForEvents" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unregisterForApplicationEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unregisterForDeviceEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unregisterForEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="verifyInitialized" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="APPLICATION_INFO" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.APPLICATION_INFO&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="DEVICE_STATUS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.DEVICE_STATUS&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_APPLICATION_ID&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_APPLICATION_VERSION" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_APPLICATION_VERSION&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_OPEN_APPLICATION_DEVICE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_OPEN_APPLICATION_DEVICE&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_OPEN_APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_OPEN_APPLICATION_ID&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_OPEN_APPLICATION_RESULT_CODE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_OPEN_APPLICATION_RESULT_CODE&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_PAYLOAD" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_PAYLOAD&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_REMOTE_APPLICATION" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_REMOTE_APPLICATION&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_REMOTE_DEVICE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_REMOTE_DEVICE&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EXTRA_STATUS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.EXTRA_STATUS&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="GCM_CONNECTIQ_SERVICE_ACTION" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.apps.connectmobile.CONNECTIQ_SERVICE_ACTION&quot;" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="GCM_CONNECTIQ_SERVICE_CLASS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.apps.connectmobile.connectiq.ConnectIQService&quot;" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="GCM_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.apps.connectmobile&quot;" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="INCOMING_MESSAGE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.INCOMING_MESSAGE&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="MIN_GCM_VERSION" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2000" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="OPEN_APPLICATION" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.OPEN_APPLICATION&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SEND_MESSAGE_STATUS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.garmin.android.connectiq.SEND_MESSAGE_STATUS&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="mContext" jni-signature="Landroid/content/Context;" static="false" transient="false" type="android.content.Context" type-generic-aware="android.content.Context" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="mInitialized" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="mListener" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$ConnectIQListener;" static="false" transient="false" type="com.garmin.android.connectiq.ConnectIQ.ConnectIQListener" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.ConnectIQListener" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="sConnectType" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQConnectType" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQConnectType" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="sInstance" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ" type-generic-aware="com.garmin.android.connectiq.ConnectIQ" visibility="protected" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQ.1" static="false" visibility="" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$1;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQ.1.1" static="false" visibility="" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$1$1;">
+      <implements name="android.content.DialogInterface.OnClickListener" name-generic-aware="android.content.DialogInterface.OnClickListener" jni-type="Landroid/content/DialogInterface$OnClickListener;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" jni-signature="(Landroid/content/DialogInterface;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dialog" type="android.content.DialogInterface" jni-type="Landroid/content/DialogInterface;">
+        </parameter>
+        <parameter name="which" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQ.2" static="false" visibility="" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$2;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQ.3" static="true" visibility="" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$3;"></class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.ConnectIQListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$ConnectIQListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onInitializeError" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSdkReady" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSdkShutDown" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQ.DeviceRegistryEntry" static="false" visibility="private" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$DeviceRegistryEntry;">
+      <constructor deprecated="not deprecated" final="false" name="ConnectIQ.DeviceRegistryEntry" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ;)V" bridge="false" static="false" type="com.garmin.android.connectiq.ConnectIQ.DeviceRegistryEntry" synthetic="false" visibility="public">
+      </constructor>
+      <field deprecated="not deprecated" final="false" name="appIds" jni-signature="Ljava/util/List;" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;java.lang.String&gt;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="receiver" jni-signature="Lcom/garmin/android/connectiq/IQMessageReceiver;" static="false" transient="false" type="com.garmin.android.connectiq.IQMessageReceiver" type-generic-aware="com.garmin.android.connectiq.IQMessageReceiver" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.IQApplicationEventListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMessageReceived" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Ljava/util/List;Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p2" type="java.util.List&lt;java.lang.Object&gt;" jni-type="Ljava/util/List&lt;Ljava/lang/Object;&gt;;">
+        </parameter>
+        <parameter name="p3" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.IQApplicationInfoListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onApplicationInfoReceived" jni-signature="(Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onApplicationNotInstalled" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.garmin.android.connectiq.ConnectIQ.IQConnectType&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="ConnectIQ.IQConnectType" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQConnectType" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQConnectType[]" jni-return="[Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="TETHERED" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQConnectType" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQConnectType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="WIRELESS" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQConnectType;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQConnectType" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQConnectType" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.IQDeviceEventListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onDeviceStatusChanged" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-type="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.garmin.android.connectiq.ConnectIQ.IQMessageStatus&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="ConnectIQ.IQMessageStatus" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus[]" jni-return="[Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="FAILURE_DEVICE_NOT_CONNECTED" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FAILURE_DURING_TRANSFER" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FAILURE_INVALID_DEVICE" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FAILURE_INVALID_FORMAT" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FAILURE_MESSAGE_TOO_LARGE" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FAILURE_UNKNOWN" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FAILURE_UNSUPPORTED_TYPE" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SUCCESS" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.IQOpenApplicationListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onOpenApplicationResponse" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="ConnectIQ.IQOpenApplicationStatus" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="fromInt" jni-signature="(I)Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="code" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus[]" jni-return="[Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="APP_IS_ALREADY_RUNNING" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="APP_IS_NOT_INSTALLED" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PROMPT_NOT_SHOWN_ON_DEVICE" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PROMPT_SHOWN_ON_DEVICE" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UNKNOWN_FAILURE" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationStatus" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="ConnectIQ.IQSdkErrorStatus" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus[]" jni-return="[Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="GCM_NOT_INSTALLED" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="GCM_UPGRADE_NEEDED" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SERVICE_ERROR" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQSdkErrorStatus;" static="true" transient="false" type="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" type-generic-aware="com.garmin.android.connectiq.ConnectIQ.IQSdkErrorStatus" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.IQSendImageListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onImageStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ConnectIQ.IQSendMessageListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMessageStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="p2" type="com.garmin.android.connectiq.ConnectIQ.IQMessageStatus" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQMessageStatus;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.android.connectiq.ConnectIQ" extends-generic-aware="com.garmin.android.connectiq.ConnectIQ" jni-extends="Lcom/garmin/android/connectiq/ConnectIQ;" final="false" name="ConnectIQAdbStrategy" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQAdbStrategy;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getConnectedDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeviceStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-return="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getKnownDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerForRemoteAppEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendImageProtocol" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;[BLcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="imageData" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQSendImageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendMessageProtocol" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;[BLcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="data" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQSendMessageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQAdbStrategy.1" static="false" visibility="" jni-signature="Lcom/garmin/android/connectiq/ConnectIQAdbStrategy$1;">
+      <implements name="com.garmin.android.connectiq.adb.AdbConnection.AdbConnectionListener" name-generic-aware="com.garmin.android.connectiq.adb.AdbConnection.AdbConnectionListener" jni-type="Lcom/garmin/android/connectiq/adb/AdbConnection$AdbConnectionListener;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onConnectionStatusChanged" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="newStatus" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-type="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.android.connectiq.ConnectIQ" extends-generic-aware="com.garmin.android.connectiq.ConnectIQ" jni-extends="Lcom/garmin/android/connectiq/ConnectIQ;" final="false" name="ConnectIQDeviceStrategy" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQDeviceStrategy;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getConnectedDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeviceStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;)Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-return="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getKnownDevices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerForRemoteAppEvents" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="app" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendImageProtocol" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;[BLcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="imageData" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQSendImageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendImageListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendMessageProtocol" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQApp;[BLcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="device" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="application" type="com.garmin.android.connectiq.IQApp" jni-type="Lcom/garmin/android/connectiq/IQApp;">
+        </parameter>
+        <parameter name="data" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQSendMessageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;">
+        </parameter>
+        <exception name="InvalidStateException" type="com.garmin.android.connectiq.exception.InvalidStateException">
+        </exception>
+        <exception name="ServiceUnavailableException" type="com.garmin.android.connectiq.exception.ServiceUnavailableException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQDeviceStrategy.1" static="false" visibility="" jni-signature="Lcom/garmin/android/connectiq/ConnectIQDeviceStrategy$1;">
+      <implements name="android.content.ServiceConnection" name-generic-aware="android.content.ServiceConnection" jni-type="Landroid/content/ServiceConnection;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onServiceConnected" jni-signature="(Landroid/content/ComponentName;Landroid/os/IBinder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="className" type="android.content.ComponentName" jni-type="Landroid/content/ComponentName;">
+        </parameter>
+        <parameter name="service" type="android.os.IBinder" jni-type="Landroid/os/IBinder;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onServiceDisconnected" jni-signature="(Landroid/content/ComponentName;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="android.content.ComponentName" jni-type="Landroid/content/ComponentName;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConnectIQStateManager" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/ConnectIQStateManager;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getApplicationInfoListener" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQApplicationInfoListener" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQStateManager;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQStateManager" jni-return="Lcom/garmin/android/connectiq/ConnectIQStateManager;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getOpenApplicationListener" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationListener" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSendMessageListener" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQSendMessageListener" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setApplicationInfoListener" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQApplicationInfoListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationInfoListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOpenApplicationListener" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQOpenApplicationListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQOpenApplicationListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSendMessageListener" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQSendMessageListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQSendMessageListener;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="IQApp" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/IQApp;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="IQApp" jni-signature="(Landroid/os/Parcel;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQApp" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQApp" jni-signature="(Ljava/lang/String;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQApp" synthetic="false" visibility="public">
+        <parameter name="applicationID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQApp" jni-signature="(Ljava/lang/String;Lcom/garmin/android/connectiq/IQApp$IQAppStatus;Ljava/lang/String;I)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQApp" synthetic="false" visibility="public">
+        <parameter name="applicationID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="status" type="com.garmin.android.connectiq.IQApp.IQAppStatus" jni-type="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;">
+        </parameter>
+        <parameter name="displayName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="version" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQApp" jni-signature="(Ljava/lang/String;I)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQApp" synthetic="false" visibility="public">
+        <parameter name="applicationID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="version" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQApp" jni-signature="(Ljava/lang/String;Ljava/lang/String;I)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQApp" synthetic="false" visibility="public">
+        <parameter name="applicationID" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="displayName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="version" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getApplicationId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDisplayName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStatus" jni-signature="()Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQApp.IQAppStatus" jni-return="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="version" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.garmin.android.connectiq.IQApp&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="IQApp.1" static="true" visibility="" jni-signature="Lcom/garmin/android/connectiq/IQApp$1;">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.garmin.android.connectiq.IQApp&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/garmin/android/connectiq/IQApp;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/garmin/android/connectiq/IQApp;" bridge="false" native="false" return="com.garmin.android.connectiq.IQApp" jni-return="Lcom/garmin/android/connectiq/IQApp;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" jni-signature="(I)[Lcom/garmin/android/connectiq/IQApp;" bridge="false" native="false" return="com.garmin.android.connectiq.IQApp[]" jni-return="[Lcom/garmin/android/connectiq/IQApp;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="size" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.garmin.android.connectiq.IQApp.IQAppStatus&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="IQApp.IQAppStatus" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQApp.IQAppStatus" jni-return="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQApp.IQAppStatus[]" jni-return="[Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="INSTALLED" jni-signature="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQApp.IQAppStatus" type-generic-aware="com.garmin.android.connectiq.IQApp.IQAppStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="NOT_INSTALLED" jni-signature="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQApp.IQAppStatus" type-generic-aware="com.garmin.android.connectiq.IQApp.IQAppStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="NOT_SUPPORTED" jni-signature="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQApp.IQAppStatus" type-generic-aware="com.garmin.android.connectiq.IQApp.IQAppStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UNKNOWN" jni-signature="Lcom/garmin/android/connectiq/IQApp$IQAppStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQApp.IQAppStatus" type-generic-aware="com.garmin.android.connectiq.IQApp.IQAppStatus" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="IQDevice" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/IQDevice;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="IQDevice" jni-signature="(Landroid/os/Parcel;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQDevice" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQDevice" jni-signature="(JLjava/lang/String;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQDevice" synthetic="false" visibility="public">
+        <parameter name="deviceIdentifier" type="long" jni-type="J">
+        </parameter>
+        <parameter name="friendlyName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeviceIdentifier" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getFriendlyName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStatus" jni-signature="()Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-return="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStatus" jni-signature="(Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="status" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-type="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.garmin.android.connectiq.IQDevice&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="IQDevice.1" static="true" visibility="" jni-signature="Lcom/garmin/android/connectiq/IQDevice$1;">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.garmin.android.connectiq.IQDevice&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/garmin/android/connectiq/IQDevice;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/garmin/android/connectiq/IQDevice;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice" jni-return="Lcom/garmin/android/connectiq/IQDevice;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" jni-signature="(I)[Lcom/garmin/android/connectiq/IQDevice;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice[]" jni-return="[Lcom/garmin/android/connectiq/IQDevice;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="size" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.garmin.android.connectiq.IQDevice.IQDeviceStatus&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="IQDevice.IQDeviceStatus" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-return="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" bridge="false" native="false" return="com.garmin.android.connectiq.IQDevice.IQDeviceStatus[]" jni-return="[Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="CONNECTED" jni-signature="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" type-generic-aware="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="NOT_CONNECTED" jni-signature="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" type-generic-aware="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="NOT_PAIRED" jni-signature="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" type-generic-aware="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UNKNOWN" jni-signature="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;" static="true" transient="false" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" type-generic-aware="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="IQMessage" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/IQMessage;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="IQMessage" jni-signature="(Landroid/os/Parcel;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQMessage" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQMessage" jni-signature="([BLjava/lang/String;Ljava/lang/String;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQMessage" synthetic="false" visibility="public">
+        <parameter name="messageData" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="notificationPackage" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="notificationAction" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.garmin.android.connectiq.IQMessage&gt;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="messageData" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="notificationAction" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="notificationPackage" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="IQMessage.1" static="true" visibility="" jni-signature="Lcom/garmin/android/connectiq/IQMessage$1;">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.garmin.android.connectiq.IQMessage&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/garmin/android/connectiq/IQMessage;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/garmin/android/connectiq/IQMessage;" bridge="false" native="false" return="com.garmin.android.connectiq.IQMessage" jni-return="Lcom/garmin/android/connectiq/IQMessage;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" jni-signature="(I)[Lcom/garmin/android/connectiq/IQMessage;" bridge="false" native="false" return="com.garmin.android.connectiq.IQMessage[]" jni-return="[Lcom/garmin/android/connectiq/IQMessage;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="size" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.content.BroadcastReceiver" extends-generic-aware="android.content.BroadcastReceiver" jni-extends="Landroid/content/BroadcastReceiver;" final="false" name="IQMessageReceiver" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/IQMessageReceiver;">
+      <constructor deprecated="not deprecated" final="false" name="IQMessageReceiver" jni-signature="()V" bridge="false" static="false" type="com.garmin.android.connectiq.IQMessageReceiver" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="IQMessageReceiver" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;)V" bridge="false" static="false" type="com.garmin.android.connectiq.IQMessageReceiver" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQDeviceEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;">
+        </parameter>
+        <parameter name="applistener" type="com.garmin.android.connectiq.ConnectIQ.IQApplicationEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAppListener" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQApplicationEventListener" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getListener" jni-signature="()Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;" bridge="false" native="false" return="com.garmin.android.connectiq.ConnectIQ.IQDeviceEventListener" jni-return="Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onReceive" jni-signature="(Landroid/content/Context;Landroid/content/Intent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="intent" type="android.content.Intent" jni-type="Landroid/content/Intent;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAppListener" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="applistener" type="com.garmin.android.connectiq.ConnectIQ.IQApplicationEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQApplicationEventListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setListener" jni-signature="(Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.garmin.android.connectiq.ConnectIQ.IQDeviceEventListener" jni-type="Lcom/garmin/android/connectiq/ConnectIQ$IQDeviceEventListener;">
+        </parameter>
+      </method>
+    </class>
+  </package>
+  <package name="com.garmin.android.connectiq.adb" jni-name="com/garmin/android/connectiq/adb">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AdbConnection" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/adb/AdbConnection;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="disconnect" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="establishConnection" jni-signature="(Lcom/garmin/android/connectiq/adb/AdbConnection$AdbConnectionListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.garmin.android.connectiq.adb.AdbConnection.AdbConnectionListener" jni-type="Lcom/garmin/android/connectiq/adb/AdbConnection$AdbConnectionListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" jni-signature="()Lcom/garmin/android/connectiq/adb/AdbConnection;" bridge="false" native="false" return="com.garmin.android.connectiq.adb.AdbConnection" jni-return="Lcom/garmin/android/connectiq/adb/AdbConnection;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPort" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isActive" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isConnected" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendMessage" jni-signature="([B)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="byte[]" jni-type="[B">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setContext" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPort" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="port" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="DEFAULT_PORT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="7381" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="AdbConnection.AdbConnectionListener" static="true" visibility="public" jni-signature="Lcom/garmin/android/connectiq/adb/AdbConnection$AdbConnectionListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onConnectionStatusChanged" jni-signature="(Lcom/garmin/android/connectiq/IQDevice;Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.garmin.android.connectiq.IQDevice" jni-type="Lcom/garmin/android/connectiq/IQDevice;">
+        </parameter>
+        <parameter name="p1" type="com.garmin.android.connectiq.IQDevice.IQDeviceStatus" jni-type="Lcom/garmin/android/connectiq/IQDevice$IQDeviceStatus;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AdbConnection.ServerThread" static="false" visibility="" jni-signature="Lcom/garmin/android/connectiq/adb/AdbConnection$ServerThread;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AdbDataHandler" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/adb/AdbDataHandler;">
+      <constructor deprecated="not deprecated" final="false" name="AdbDataHandler" jni-signature="()V" bridge="false" static="false" type="com.garmin.android.connectiq.adb.AdbDataHandler" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" jni-signature="(Landroid/content/Context;[B)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="data" type="byte[]" jni-type="[B">
+        </parameter>
+      </method>
+    </class>
+  </package>
+  <package name="com.garmin.android.connectiq.exception" jni-name="com/garmin/android/connectiq/exception">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" extends-generic-aware="java.lang.Exception" jni-extends="Ljava/lang/Exception;" final="false" name="InvalidStateException" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/exception/InvalidStateException;">
+      <constructor deprecated="not deprecated" final="false" name="InvalidStateException" jni-signature="(Ljava/lang/String;)V" bridge="false" static="false" type="com.garmin.android.connectiq.exception.InvalidStateException" synthetic="false" visibility="public">
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" extends-generic-aware="java.lang.Exception" jni-extends="Ljava/lang/Exception;" final="false" name="ServiceUnavailableException" static="false" visibility="public" jni-signature="Lcom/garmin/android/connectiq/exception/ServiceUnavailableException;">
+      <constructor deprecated="not deprecated" final="false" name="ServiceUnavailableException" jni-signature="(Ljava/lang/String;)V" bridge="false" static="false" type="com.garmin.android.connectiq.exception.ServiceUnavailableException" synthetic="false" visibility="public">
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+    </class>
+  </package>
+  <package name="com.garmin.monkeybrains.serialization" jni-name="com/garmin/monkeybrains/serialization">
+    <class abstract="false" deprecated="not deprecated" extends="java.util.ArrayList" extends-generic-aware="java.util.ArrayList&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-extends="Ljava/util/ArrayList;" final="false" name="DataBlock" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/DataBlock;">
+      <constructor deprecated="not deprecated" final="false" name="DataBlock" jni-signature="()V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.DataBlock" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="DataBlock" jni-signature="([BLcom/garmin/monkeybrains/serialization/StringBlock;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.DataBlock" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <parameter name="stringBlock" type="com.garmin.monkeybrains.serialization.StringBlock" jni-type="Lcom/garmin/monkeybrains/serialization/StringBlock;">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="add" jni-signature="(Lcom/garmin/monkeybrains/serialization/MonkeyType;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="type" type="com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;" jni-type="Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="Exception" type="java.lang.Exception">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyArray" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyArray;">
+      <implements name="com.garmin.monkeybrains.serialization.MonkeyContainer" name-generic-aware="com.garmin.monkeybrains.serialization.MonkeyContainer" jni-type="Lcom/garmin/monkeybrains/serialization/MonkeyContainer;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyArray" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyArray" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyArray" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyArray" synthetic="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+        <parameter name="list" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getChildCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getChildren" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getValues" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Boolean&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyBool" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyBool;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyBool" jni-signature="(Z)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyBool" synthetic="false" visibility="public">
+        <parameter name="bool" type="boolean" jni-type="Z">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyBool" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyBool" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Integer&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyChar" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyChar;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyChar" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyChar" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyChar" jni-signature="(Ljava/lang/Integer;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyChar" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.Integer" jni-type="Ljava/lang/Integer;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MonkeyContainer" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyContainer;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="getChildCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getChildren" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Double&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyDouble" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyDouble;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyDouble" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyDouble" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyDouble" jni-signature="(D)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyDouble" synthetic="false" visibility="public">
+        <parameter name="value" type="double" jni-type="D">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Double;" bridge="false" native="false" return="java.lang.Double" jni-return="Ljava/lang/Double;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Float&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyFloat" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyFloat;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyFloat" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyFloat" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyFloat" jni-signature="(F)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyFloat" synthetic="false" visibility="public">
+        <parameter name="value" type="float" jni-type="F">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.util.HashMap&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;, com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyHash" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyHash;">
+      <implements name="com.garmin.monkeybrains.serialization.MonkeyContainer" name-generic-aware="com.garmin.monkeybrains.serialization.MonkeyContainer" jni-type="Lcom/garmin/monkeybrains/serialization/MonkeyContainer;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyHash" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyHash" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyHash" jni-signature="(Ljava/util/Map;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyHash" synthetic="false" visibility="public">
+        <parameter name="hash" type="java.util.Map&lt;java.lang.Object, java.lang.Object&gt;" jni-type="Ljava/util/Map&lt;Ljava/lang/Object;Ljava/lang/Object;&gt;;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getChildCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getChildren" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHashMap" jni-signature="()Ljava/util/HashMap;" bridge="false" native="false" return="java.util.HashMap&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;, com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/HashMap&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/util/HashMap;" bridge="false" native="false" return="java.util.HashMap&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;, com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/HashMap&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Integer&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyInt" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyInt;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyInt" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyInt" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyInt" jni-signature="(I)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyInt" synthetic="false" visibility="public">
+        <parameter name="value" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Long&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyLong" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyLong;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyLong" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyLong" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyLong" jni-signature="(J)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyLong" synthetic="false" visibility="public">
+        <parameter name="value" type="long" jni-type="J">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Long;" bridge="false" native="false" return="java.lang.Long" jni-return="Ljava/lang/Long;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.Object&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyNull" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyNull;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyNull" jni-signature="()V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyNull" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyNull" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyNull" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyNull" jni-signature="(Ljava/lang/Object;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyNull" synthetic="false" visibility="public">
+        <parameter name="obj" type="java.lang.Object" jni-type="Ljava/lang/Object;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.garmin.monkeybrains.serialization.MonkeyType" extends-generic-aware="com.garmin.monkeybrains.serialization.MonkeyType&lt;java.lang.String&gt;" jni-extends="Lcom/garmin/monkeybrains/serialization/MonkeyType;" final="false" name="MonkeyString" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyString;">
+      <constructor deprecated="not deprecated" final="false" name="MonkeyString" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyString" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyString" jni-signature="(Ljava/lang/String;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyString" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getOffset" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getValue" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serializeString" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOffset" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="offset" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setValue" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="string" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MonkeyType" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/MonkeyType;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="MonkeyType" jni-signature="(B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.MonkeyType" synthetic="false" visibility="public">
+        <parameter name="type" type="byte" jni-type="B">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deserialize" jni-signature="([B)Lcom/garmin/monkeybrains/serialization/MonkeyType;" bridge="false" native="false" return="com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;" jni-return="Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="fromJava" jni-signature="(Ljava/lang/Object;)Lcom/garmin/monkeybrains/serialization/MonkeyType;" bridge="false" native="false" return="com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;" jni-return="Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+        <parameter name="obj" type="T" jni-type="TT;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getNumBytes" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="toJava" jni-signature="()Ljava/lang/Object;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="ARRAY" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="5" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="BOOLEAN" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="9" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CHAR" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="19" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="DOUBLE" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="15" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FLOAT" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="2" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="HASH" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="11" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="INT" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LONG" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="14" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="NULL" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="STRING" jni-signature="B" static="true" transient="false" type="byte" type-generic-aware="byte" value="3" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="mType" jni-signature="B" static="false" transient="false" type="byte" type-generic-aware="byte" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SerializedObject" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/SerializedObject;">
+      <constructor deprecated="not deprecated" final="false" name="SerializedObject" jni-signature="()V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.SerializedObject" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="SerializedObject" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.SerializedObject" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addObject" jni-signature="(Lcom/garmin/monkeybrains/serialization/MonkeyType;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="type" type="com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;" jni-type="Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getValues" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="Exception" type="java.lang.Exception">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Serializer" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/Serializer;">
+      <constructor deprecated="not deprecated" final="false" name="Serializer" jni-signature="()V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.Serializer" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="Serializer" jni-signature="(Ljava/lang/Object;)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.Serializer" synthetic="false" visibility="public">
+        <parameter name="obj" type="java.lang.Object" jni-type="Ljava/lang/Object;">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addObject" jni-signature="(Ljava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+        <parameter name="obj" type="T" jni-type="TT;">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deserialize" jni-signature="([B)Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.garmin.monkeybrains.serialization.MonkeyType&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lcom/garmin/monkeybrains/serialization/MonkeyType&lt;*&gt;;&gt;;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="Exception" type="java.lang.Exception">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="(Ljava/lang/Object;)[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="true" synchronized="false" synthetic="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+        <parameter name="obj" type="T" jni-type="TT;">
+        </parameter>
+        <exception name="Exception" type="java.lang.Exception">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.util.ArrayList" extends-generic-aware="java.util.ArrayList&lt;com.garmin.monkeybrains.serialization.MonkeyString&gt;" jni-extends="Ljava/util/ArrayList;" final="false" name="StringBlock" static="false" visibility="public" jni-signature="Lcom/garmin/monkeybrains/serialization/StringBlock;">
+      <constructor deprecated="not deprecated" final="false" name="StringBlock" jni-signature="()V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.StringBlock" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="StringBlock" jni-signature="([B)V" bridge="false" static="false" type="com.garmin.monkeybrains.serialization.StringBlock" synthetic="false" visibility="public">
+        <parameter name="bytes" type="byte[]" jni-type="[B">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addString" jni-signature="(Lcom/garmin/monkeybrains/serialization/MonkeyString;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="type" type="com.garmin.monkeybrains.serialization.MonkeyString" jni-type="Lcom/garmin/monkeybrains/serialization/MonkeyString;">
+        </parameter>
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeserializedStrings" jni-signature="()Ljava/util/HashMap;" bridge="false" native="false" return="java.util.HashMap&lt;java.lang.Integer, java.lang.String&gt;" jni-return="Ljava/util/HashMap&lt;Ljava/lang/Integer;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="serialize" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+        </exception>
+      </method>
+    </class>
+  </package>
+</api>
