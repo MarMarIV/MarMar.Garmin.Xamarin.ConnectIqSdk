@@ -1,0 +1,1 @@
+"C:\D\LocalNugetRepository\nuget.exe" pack "C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK\Build\nuget.nuspec" -BasePath "C:\Users\Martin\source\repos\MarMar.Garmin.Xamarin.ConnectIqSDK" -OutputDirectory "C:\D\LocalNugetRepository"
